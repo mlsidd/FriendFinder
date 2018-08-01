@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-1">Questions</h1>
+        <div class="row">
+            <div class="col-md-10">
+                <form id="userInputForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="picture">Upload a Picture</label>
+                        <input type="file" class="form-control-file" id="picture">
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question1">
+                            <h3>Question 1</h3>
+                            <h4>I enjoy listening to Live Music?</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question1">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question2">
+                            <h3>Question 2</h3>
+                            <h4>I value honesty and loyalty in my relationships.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question2">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question3">
+                            <h3>Question 3</h3>
+                            <h4>A day without laughter is a day wasted.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question3">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question4">
+                            <h3>Question 4</h3>
+                            <h4>I like people who have a good sense of humor. </h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question4">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question5">
+                            <h3>Question 5</h3>
+                            <h4>I am physically active and enjoy excercising.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question5">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question6">
+                            <h3>Question 6</h3>
+                            <h4>You should work to live rather than live to work.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question6">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question7">
+                            <h3>Question 7</h3>
+                            <h4>I am a spontaneous person who enjoys adventure.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question7">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question8">
+                            <h3>Question 8</h3>
+                            <h4>I enjoy helping people.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question8">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question9">
+                            <h3>Question 9</h3>
+                            <h4>I like to dance like nobody's watching.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question9">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="question10">
+                            <h3>Question 10</h3>
+                            <h4>I believe in always treating people with kindness and respect.</h4>
+                        </label>
+                        <select class="form-control col-6 question" id="question10">
+                            <option>1 (Strongly Disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (Strongly Agree)</option>
+                        </select>
+                        <span class="error">This field is required</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-md" id="submit">Submit</button>
+    </div>
+    <!--end of container-->
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Best Match is...</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="match"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of modal-->
+
+    <script src = "../data/friends.js"></script>
+    <script src = "../routing/apiRoutes.js"></script>
+    <script src = "../routing/htmlRoutes.js"></script>
+    <script src = "../../server.js"></script>
+    </body>
+</html>
